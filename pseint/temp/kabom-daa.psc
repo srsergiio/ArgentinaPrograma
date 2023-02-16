@@ -1,3 +1,3 @@
-Algoritmo sin_titulo
+Algoritmo ejercicio3
 	
 FinAlgoritmo
