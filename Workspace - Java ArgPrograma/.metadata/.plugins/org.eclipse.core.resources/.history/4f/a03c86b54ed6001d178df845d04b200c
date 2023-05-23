@@ -1,0 +1,100 @@
+package GUIA1;
+
+public class Cuadrilatero {
+	private double largo ,alto ;
+	
+	public double getLargo() {
+		return largo;
+	}
+
+	public void setLargo(double largo) {
+		this.largo = largo;
+	}
+
+	public double getAlto() {
+		return alto;
+	}
+
+	public void setAlto(double alto) {
+		this.alto = alto;
+	}
+
+	public Cuadrilatero() {
+		
+	}
+	
+	public Cuadrilatero(double largo ,double alto) {
+		this.largo = largo;
+		this.alto = alto;
+		
+	}
+	
+	public double	calcularPerimetro(){
+		return this.getLargo() *this.getLargo()*2;
+	}
+	
+	public double calcularArea() {
+		return this.getLargo() *this.getLargo();
+	}
+	
+	public Boolean esUnCuadrado() {
+		return this.getLargo() ==this.getAlto();
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cuadrilatero cuaUno= new Cuadrilatero(70,50);
+		
+		
+		System.out.println("\n a) largo : "+cuaUno.largo +" Alto :" +cuaUno.alto 
+				+" \n b) su perimetro : "+cuaUno.calcularPerimetro()
+				+" \n c) su superficie :"+cuaUno.calcularArea()+" \n d) si es un cuadrado o no : "+cuaUno.esUnCuadrado());
+		cuaUno.setAlto(70);
+		System.out.println("\n e) largo : "+cuaUno.largo +" Alto :" +cuaUno.alto 
+				+"\n es un cuadrado :"+cuaUno.esUnCuadrado() );
+		System.out.println("\n\n////////////////////////////////////////////////////////////////\n\n");
+		
+		
+		Circulo circuloUno = new Circulo(5.75);
+		System.out.println(circuloUno.calcularArea());
+		System.out.println(circuloUno.calcularPerímetro());
+		
+	}
+
+}
+
+class Circulo{
+	
+	private double pi= Math.PI;
+	private double radio;
+	
+	public double getRadio() {
+		return radio;
+	}
+
+	public void setRadio(double radio) {
+		this.radio = radio;
+	}
+
+	public Circulo() {
+		
+	}
+	
+	public Circulo(double radio) {
+		this.radio=radio;
+	}
+	
+	public  double calcularArea() {
+		return this.pi*Math.pow(this.getRadio(), 2);
+	}
+	
+	public double  calcularPerímetro(){
+		return 2*this.pi *this.getRadio();
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+}
+

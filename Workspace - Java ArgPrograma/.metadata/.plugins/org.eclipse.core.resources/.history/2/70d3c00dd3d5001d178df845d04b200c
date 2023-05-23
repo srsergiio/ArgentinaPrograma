@@ -1,0 +1,50 @@
+package GUIA1;
+
+public class Numero {
+	private int numero ;
+	
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public Numero() {
+		
+	}
+	
+	public Numero(int num) {
+		this.numero=num;
+	}
+	
+	public boolean esPar(int Numero) {
+		return Numero%2==0;
+	}
+	
+	public boolean esPositivo(int Numero) {
+		return Numero>0;
+	}
+	
+	public boolean esMultiploDe(int Numero) {
+	boolean  resultado =false;
+		if (this.getNumero()<=Numero) {
+			for (int i=1 ;i<Numero;i++) {
+				resultado= this.getNumero()*i==Numero;
+				System.out.print(i);
+				if (resultado==true)break;
+				
+			}
+		}
+		
+		return resultado;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Numero num = new Numero(2);
+		System.out.print(num.esMultiploDe(2));
+	}
+
+}

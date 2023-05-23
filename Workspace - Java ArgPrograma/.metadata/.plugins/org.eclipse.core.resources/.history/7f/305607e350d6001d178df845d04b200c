@@ -1,0 +1,94 @@
+package GUIA1;
+
+public class Computadora {
+	
+	public String getProcesador() {
+		return Procesador;
+	}
+	public void setProcesador(String procesador) {
+		Procesador = procesador;
+	}
+	public String getPlacaBace() {
+		return PlacaBace;
+	}
+	public void setPlacaBace(String placaBace) {
+		PlacaBace = placaBace;
+	}
+	public String getRam() {
+		return Ram;
+	}
+	public void setRam(String ram) {
+		Ram = ram;
+	}
+	public String getPlacadeVideo() {
+		return PlacadeVideo;
+	}
+	public void setPlacadeVideo(String placadeVideo) {
+		PlacadeVideo = placadeVideo;
+	}
+	public String getFuente() {
+		return fuente;
+	}
+	public void setFuente(String fuente) {
+		this.fuente = fuente;
+	}
+	public String getGabinete() {
+		return Gabinete;
+	}
+	public void setGabinete(String gabinete) {
+		Gabinete = gabinete;
+	}
+	public String getPerifericos() {
+		return Perifericos;
+	}
+	public void setPerifericos(String perifericos) {
+		Perifericos = perifericos;
+	}
+	public String getMonitor() {
+		return Monitor;
+	}
+	public void setMonitor(String monitor) {
+		Monitor = monitor;
+	}
+
+	private String Procesador;
+	private String PlacaBace;
+	private String Ram;
+	private String PlacadeVideo;
+	private String fuente;
+	private String Gabinete;
+	
+	private String Perifericos;
+	private String Monitor;
+	
+	public Computadora() {
+		Procesador="";
+		PlacaBace="";
+		Ram="";
+		PlacadeVideo="";
+		fuente="";
+		Gabinete="";
+		Perifericos="";
+		Monitor="";
+	}
+	
+	public Computadora(String pro ,String pb,String r,String pv,String f,String g,String p,String m) {
+		Procesador=pro;
+		PlacaBace=pb;
+		Ram=r;
+		PlacadeVideo=pv;
+		fuente=f;
+		Gabinete=g;
+		Perifericos=p;
+		Monitor=m;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Computadora pcgamer = new Computadora();
+		pcgamer.setPlacadeVideo("RTX4090");
+		System.out.print(pcgamer.getPlacadeVideo());
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+a) Crear un objeto Triángulo válido. Luego utilizando sus métodos:
+		 * b) Mostrar por consola que tipo de triángulo es. 
+		 * c) Crear un objeto Triángulo inválido.Luego utilizando sus métodos:
+		 * d) Mostrar por consola que tipo de triangulo es.

@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\sr.sergiio\OneDrive\Documentos\ArgentinaPrograma\Workspace - Java ArgPrograma\.metadata\.plugins\org.eclipse.jdt.core
+3959137331.index
+1865797976.index
+1593427329.index

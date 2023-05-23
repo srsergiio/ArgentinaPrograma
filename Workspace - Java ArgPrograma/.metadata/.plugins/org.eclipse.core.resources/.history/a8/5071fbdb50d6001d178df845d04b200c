@@ -1,0 +1,171 @@
+package GUIA1;
+
+public class Encuentro1_3 {
+
+	public static void main(String[] args) {
+		Producto Cocacola = new Producto();
+		Cocacola.setProducto(231, "gaceosa", 700, 999);
+		Cocacola.getallProducto();
+		      
+		System.out.println("\n\n////////////////////////////////////////////////////////////////\n\n");
+		
+		
+		Computadora pcgamer = new Computadora();
+		pcgamer.setPlacadeVideo("RTX4090");
+		System.out.print(pcgamer.getPlacadeVideo());
+	}
+
+}
+class Producto {
+	  /*
+   * En un nuevo proyecto crear una clase de nombre Producto con los atributos
+   * código de tipo
+   * entero, descripción un String, precio de tipo double y stock de tipo entero;
+   * un constructor
+   * que permita inicializar todos sus atributos y los métodos get y set. Desde el
+   * método main
+   * de clase principal del proyecto instanciar un Producto y luego mostrar por
+   * consola el estado
+   * de todos sus atributos.
+   */
+
+  int codigo;
+  String descripción;
+  double precio;
+  int stock;
+  
+  public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getDescripción() {
+		return descripción;
+	}
+	public void setDescripción(String descripción) {
+		this.descripción = descripción;
+	}
+	public double getPrecio() {
+		return precio;
+	}
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	public int getStock() {
+		return stock;
+	}
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
+
+
+  public Producto() {
+      codigo = 0;
+      descripción = "";
+      precio = 0;
+      stock = 0;
+  }
+
+  public void setProducto(int Codigo, String Descripción, double Precio, int Stock) {
+      codigo = Codigo;
+      descripción = Descripción;
+      precio = Precio;
+      stock = Stock;
+
+  }
+
+  public void getallProducto() {
+      System.out.println(codigo + " " + descripción + " " + precio + " " + stock);
+  }
+
+
+}
+class Computadora {
+	
+	public String getProcesador() {
+		return Procesador;
+	}
+	public void setProcesador(String procesador) {
+		Procesador = procesador;
+	}
+	public String getPlacaBace() {
+		return PlacaBace;
+	}
+	public void setPlacaBace(String placaBace) {
+		PlacaBace = placaBace;
+	}
+	public String getRam() {
+		return Ram;
+	}
+	public void setRam(String ram) {
+		Ram = ram;
+	}
+	public String getPlacadeVideo() {
+		return PlacadeVideo;
+	}
+	public void setPlacadeVideo(String placadeVideo) {
+		PlacadeVideo = placadeVideo;
+	}
+	public String getFuente() {
+		return fuente;
+	}
+	public void setFuente(String fuente) {
+		this.fuente = fuente;
+	}
+	public String getGabinete() {
+		return Gabinete;
+	}
+	public void setGabinete(String gabinete) {
+		Gabinete = gabinete;
+	}
+	public String getPerifericos() {
+		return Perifericos;
+	}
+	public void setPerifericos(String perifericos) {
+		Perifericos = perifericos;
+	}
+	public String getMonitor() {
+		return Monitor;
+	}
+	public void setMonitor(String monitor) {
+		Monitor = monitor;
+	}
+
+	private String Procesador;
+	private String PlacaBace;
+	private String Ram;
+	private String PlacadeVideo;
+	private String fuente;
+	private String Gabinete;
+	
+	private String Perifericos;
+	private String Monitor;
+	
+	public Computadora() {
+		Procesador="";
+		PlacaBace="";
+		Ram="";
+		PlacadeVideo="";
+		fuente="";
+		Gabinete="";
+		Perifericos="";
+		Monitor="";
+	}
+	
+	public Computadora(String pro ,String pb,String r,String pv,String f,String g,String p,String m) {
+		Procesador=pro;
+		PlacaBace=pb;
+		Ram=r;
+		PlacadeVideo=pv;
+		fuente=f;
+		Gabinete=g;
+		Perifericos=p;
+		Monitor=m;
+	}
+	
+
+
+}

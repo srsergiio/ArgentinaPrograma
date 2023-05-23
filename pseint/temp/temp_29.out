@@ -1,0 +1,4 @@
+*** Ejecucion Iniciada. ***
+Lin 17 (inst 1): ERROR 200: Faltan subindices para el arreglo (VECTOR).
+Lin 5 (inst 1): ...dentro del subproceso CREARVECTOR, invocado desde aquí.
+*** Ejecucion Interrumpida. ***

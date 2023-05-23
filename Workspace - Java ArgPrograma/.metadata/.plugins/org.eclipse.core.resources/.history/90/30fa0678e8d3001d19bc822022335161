@@ -1,0 +1,38 @@
+package GUIA1;
+
+public class Piesa {
+
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getString() {
+		return posicion;
+	}
+	public void setposicion(String string) {
+		posicion = string;
+	}
+
+	private String nombre;
+	private String posicion;
+	private String color;
+	public  Piesa() {
+
+	}
+	public  Piesa(String n,String p,String c) {
+		 nombre = n;
+		 posicion = p;
+		 color=c;
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Piesa fichaUNO = new Piesa("alfil","a1","blanco");
+		
+		System.out.print(fichaUNO.nombre);
+	}
+
+}
