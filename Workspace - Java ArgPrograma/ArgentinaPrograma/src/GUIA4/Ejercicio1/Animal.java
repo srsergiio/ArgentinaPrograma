@@ -19,5 +19,7 @@ public class Animal {
        this.raza=raza;
    }
    
-   public void alimentarse(){}
+   public void alimentarse(){
+       System.out.println("Clase Animal");
+   }
 }

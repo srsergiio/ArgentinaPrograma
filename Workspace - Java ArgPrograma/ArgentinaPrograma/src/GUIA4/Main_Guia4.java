@@ -5,6 +5,8 @@
 package GUIA4;
 
 import GUIA4.Ejercicio1.*;
+import GUIA4.Ejercicio2.Lavadora;
+import GUIA4.Ejercicio2.Televisor;
 
 
 
@@ -18,12 +20,12 @@ lo siguiente:
 
 public class Main_Guia4 {
     public static void main(String[] args) {
-        Perro p1 = new Perro("perro", "Croquetas", 11, "chiwuwua");
-        p1.alimentarse();
-        Animal g1 = new Gato("rodolfo", "higado", 3, "naranja");
-        g1.alimentarse();
-        Caballo c= new Caballo("tiraalblanco", "pasto", 3, "mula");
-        c.alimentarse();
+//        Perro p1 = new Perro("perro", "Croquetas", 11, "chiwuwua");
+//        p1.alimentarse();
+//        Gato g1 = new Gato("rodolfo", "higado", 3, "naranja");
+//        g1.alimentarse();
+//        Caballo c= new Caballo("tiraalblanco", "pasto", 3, "mula");
+//        c.alimentarse();
         
         
         
@@ -74,6 +76,12 @@ public class Main_Guia4 {
         Vamos a crear una Lavadora y un Televisor y llamar a los métodos necesarios para mostrar el precio
         final de los dos electrodomésticos
         */
+        Lavadora Lavadora= new Lavadora (255, "gris", 'A', 80,  31);
+        Lavadora.precioFinal();
+        System.out.println("Lavadora : "+Lavadora.getPrecio());
+        Televisor Televisor= new Televisor (255, "gris", 'A', 80,  40,true);
+        Televisor.precioFinal();
+        System.out.println("Televisor : "+Televisor.getPrecio());
         
     }
 }

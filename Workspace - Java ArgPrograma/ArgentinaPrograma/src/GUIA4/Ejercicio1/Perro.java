@@ -15,7 +15,7 @@ public class Perro extends Animal {
     }
      @Override        
     public void alimentarse() {
-        super.alimentarse(); // Llamada al método de la clase base
+        //super.alimentarse(); // Llamada al método de la clase base
         System.out.println("El perro esta comiendo su "+alimento);
     }      
             
