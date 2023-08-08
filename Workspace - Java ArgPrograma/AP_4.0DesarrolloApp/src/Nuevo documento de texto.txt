@@ -1,0 +1,10 @@
+GUIA 1 : 07/08 a 09/08 3 clases  GIT
+GUIA 2 : 10/08 a 21/08 8 clases
+GUIA 3 : 22/08 a 30/08 7 clases
+GUIA 4 : 31/08 a 06/09 5 clases
+GUIA 5 : 07/09 a 01/10  17 Clases
+GUIA 6 : 02/10  1
+
+FALTAS 8 MAXIMAS 41 clase
+
+CONTROL + SHIFT + P : CREAR NUEVO PROYECTO JAVA
